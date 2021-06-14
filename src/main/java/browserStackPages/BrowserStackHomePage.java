@@ -15,7 +15,11 @@ public class BrowserStackHomePage {
         String getheadertext =driver.findElement(Header).getText();
         assertEquals("App & Browser Testing for Teams", getheadertext);
     }
+
+
     public void clickOnGetStarted() {
         driver.findElement(getStarted).click();
     }
 }
+
+//First code was added to git
