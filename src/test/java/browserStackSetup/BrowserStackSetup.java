@@ -1,13 +1,4 @@
-package org.example;
-
-import static org.junit.Assert.assertTrue;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
+package browserStackSetup;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,11 +6,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import browserStackPages.*;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest
-{
+public class BrowserStackSetup {
     //String driverPath = "C:\\geckodriver.exe";
     WebDriver driver;
     BrowserStackHomePage objBrowserStackHomePage;
@@ -33,7 +20,7 @@ public class AppTest
         driver.get("https://www.browserstack.com/");
     }
 
-    @org.testng.annotations.Test(priority = 1)
+    @Test(priority = 1)
     public void navigate_to_homepage_click_on_getstarted() {
         objBrowserStackHomePage = new BrowserStackHomePage(driver);
         objBrowserStackHomePage.veryHeader();

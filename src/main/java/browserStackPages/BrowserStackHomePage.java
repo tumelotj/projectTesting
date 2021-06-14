@@ -13,7 +13,7 @@ public class BrowserStackHomePage {
 
     public void veryHeader() {
         String getheadertext =driver.findElement(Header).getText();
-        assertEquals("App & Browser Testing for Teams", getheadertext);
+        assertEquals("App & Browser Testing Made Easy", getheadertext);
     }
 
 
